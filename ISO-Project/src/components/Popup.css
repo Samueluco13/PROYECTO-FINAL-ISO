@@ -1,0 +1,42 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    z-index: 1;
+}
+
+.blurry {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px); /* Asegura el difuminado del fondo */
+    
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+}
+
+.title, .info{
+    position: relative;
+    z-index: 1;
+}
+
+.info{
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
